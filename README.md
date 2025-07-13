@@ -1,1 +1,2 @@
-
+in Minor Projects Folder, I do have uploaded all my html,css,js mini projects...
+in other 3(components,components and run.py)these are the essential files of my major 3 AI projects...haven't uploaded complete projects
