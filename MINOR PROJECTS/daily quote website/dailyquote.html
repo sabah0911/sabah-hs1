@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Quote</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    border-color: #050404;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #050404;
+    height: 100vh;
+    margin: 0;
+}
+
+
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* add some space below the menu bar */
+}
+
+header nav {
+    flex-basis: 30%;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav li {
+    margin-right: 20px;
+}
+
+header nav a {
+    color: #75d3f7;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: #75d3f7;
+}
+
+.title-container {
+    text-align: center;
+    margin-top: 40px auto; /* add some space above the title */
+}
+
+.title-container h1 {
+    font-size: 24px;
+    margin-bottom: 0;
+    font-weight: bold;
+    color: #a8e9f4;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #0a0707; /* add a white background to the container */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* add a subtle shadow to the container */
+    
+}
+.background-container {
+  position: fixed; /* Make it fixed so it doesn't move with the content */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; /* Make it full height */
+  background-image: url('Capture copy.PNG');
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* Make it behind the content */
+}
+.container {
+  width: 80%;
+  margin: 40px auto;
+  background-color: #c2eff9; /* add a white background to the container */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(142, 204, 245, 0.1); /* add a subtle shadow to the container */
+}
+
+main {
+    display: flex;
+    justify-content: flex-start; /* changed from center to flex-start */
+    align-items: center;
+    height: 100vh;
+    margin: 0 20px;
+}
+
+.quote-container {
+    background-color: #bfedf9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 400px;
+    transform: translateY(20px);
+    transition: transform 0.3s ease-in-out;
+    margin: 20px; /* added margin-left to move the quote box to the left */
+}
+
+.quote-container:hover {
+    transform: translateY(0);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+blockquote {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+#quote {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #337ab7;
+}
+
+#author {
+    font-size: 16px;
+    color: #666;
+}
+
+button#new-quote {
+    background-color: #337ab7;
+    color: #bee9fb;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button#new-quote:hover {
+    background-color: #090909;
+    box-shadow: 0 0 20px rgba(11, 11, 11, 0.812);
+}
+
+.classification-table {
+  width: 50%;
+  border-collapse: collapse;
+}
+
+.classification-table th, .classification-table td {
+  border: 1px solid #010502;
+  padding: 10px;
+  text-align: left;
+}
+
+.classification-table th {
+  background-color: #a4dbf5;
+  color: #032765;
+}
+
+/* Search Bar Styles */
+/* Search Bar Styles */
+
+.search-bar {
+  margin: 20px auto; /* Add auto margin to center the search bar */
+  padding: 10px; /* Increase padding to make the search bar a bit bigger */
+  background-color: #add8e6;
+  border: 1px solid #040404;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px; /* Increase width to make the search bar a bit bigger */
+}
+
+.search-bar input[type="search"] {
+  flex: 1;
+  padding: 10px; /* Increase padding to make the input field a bit bigger */
+  font-size: 16px; /* Increase font size to make the input field a bit bigger */
+  border: none;
+  border-radius: 10px 0 0 10px;
+}
+
+.search-bar button[type="button"] {
+  padding: 10px 20px; /* Increase padding to make the button a bit bigger */
+  font-size: 16px; /* Increase font size to make the button a bit bigger */
+  border: none;
+  border-radius: 0 10px 10px 0;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.search-bar button[type="button"]:hover {
+  background-color: #3e8e41;
+}
+
+.search-bar input[type="search"]:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Quote Submission Form Styles */
+
+.quote-submission-form {
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #add8e6;
+  border: 1px solid #0c0c0c;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+.quote-submission-form h2 {
+  margin-top: 0;
+  color: #040404;
+  text-decoration-color: #050404;
+  font-weight: bold;
+  text-align: center;
+}
+
+.quote-submission-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #080707;
+}
+
+.quote-submission-form textarea,.quote-submission-form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.quote-submission-form select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.quote-submission-form button[type="button"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+}
+
+.quote-submission-form button[type="button"]:hover {
+  background-color: #82ebfc;
+  color: #337ab7;
+}
+</style>
+<body>
+    <div class="background-container"></div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Quotes</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="title-container">
+            <h1>Daily Quote</h1>
+        </div>
+    </header>
+    <main>
+        <section class="quote-container">
+            <blockquote>
+                <p id="quote">"Believe you can and you're halfway there."</p>
+                <cite id="author">— Theodore Roosevelt</cite>
+            </blockquote>
+            <button id="new-quote">New Quote</button>
+        </section>
+  
+    </main>
+    
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classification Table</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="classification-page">
+    <h2> We Prefer You</h2>
+    <table class="classification-table">
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Quote Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Inspirational</td>
+          <td>Motivational</td>
+          <td>Quotes that inspire and motivate</td>
+        </tr>
+        <tr>
+          <td>Funny</td>
+          <td>Humorous</td>
+          <td>Quotes that make you laugh</td>
+        </tr>
+        <tr>
+          <td>Love</td>
+          <td>Romantic</td>
+          <td>Quotes about love and relationships</td>
+        </tr>
+        <!-- Add more rows as needed -->
+      </tbody>
+    </table>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div class="search-bar">
+    <input type="search" id="search-input" placeholder="Search quotes...">
+    <button id="search-button">Search</button>
+  </div>
+  <div style="height: 20px;"></div>
+
+  <div class="quote-submission-form">
+    <h2>Submit Your Own Quote!</h2>
+    <form id="quote-submission-form">
+      <label for="quote-text">Quote:</label>
+      <textarea id="quote-text" name="quote-text" placeholder="Enter your quote..."></textarea>
+      <label for="quote-author">Author:</label>
+      <input type="text" id="quote-author" name="quote-author" placeholder="Enter the author's name...">
+      <label for="quote-category">Category:</label>
+      <select id="quote-category" name="quote-category">
+        <option value="">Select a category...</option>
+        <option value="Inspirational">Inspirational</option>
+        <option value="Funny">Funny</option>
+        <option value="Love">Love</option>
+        <option value="Romantic">Romantic</option>
+      </select>
+      <button id="submit-quote-button">Submit Quote</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+    <script src="script.js"></script>
+</body>
+</html>

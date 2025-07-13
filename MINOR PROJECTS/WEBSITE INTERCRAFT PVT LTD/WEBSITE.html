@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intercraft</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #b6b4b4;
+  padding: 10px; /* Adjust padding as needed */
+}
+
+.menu {
+    display: flex; /* Make the list items display horizontally */
+}
+
+.menu li {
+    margin: 0 10px; /* Adjust spacing between items */
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #ff0000;
+}
+
+.contact-button {
+  background-color: #007bff; /* Blue background color */
+  color: #fff; /* White text color */
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#contact-button:hover {
+  background-color: #0056b6; /* Darker blue background color on hover */
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+}
+
+main {
+    text-align:center;
+    font-size: 20px;
+}
+
+.hero-image {
+    position: relative;
+}
+
+.hero-image img {
+    width: 100%;
+}
+
+.hero-text {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #2c2929;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-container {
+    flex: 1;
+    margin-left: 20px; /* Adjust the left margin as needed */
+    margin-right: 20px; /* Adjust the right margin as needed */
+
+}
+
+.image-container {
+    flex: 1;
+}
+
+.image-container img {
+    width: 100%; /* Ensure the image fills the container */
+    height: auto; /* Maintain aspect ratio */
+}
+.arrow-button {
+    position: absolute;
+    top: 242%;
+    transform: translateY(-50%);
+    background-color: #454444;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.left-arrow {
+    left: 10px; /* Adjust the left position as needed */
+}
+
+.right-arrow {
+    right: 10px; /* Adjust the right position as needed */
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust height as needed */
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers the entire container */
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; /* Set text color to white for better readability */
+    padding: 20px; /* Add padding for spacing */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent overlay */
+    z-index: 1;
+}
+
+.navigation-arrows {
+    position: absolute;
+    bottom: auto; /* Adjust bottom padding as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+}
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f0f0; /* Adjust background color as needed */
+}
+
+.logo img {
+  max-height: 50px;
+}
+
+.tagline {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.5;
+  max-width: 500px; /* Adjust max-width as needed */
+  text-align: center;
+}
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
+  grid-gap: 50px; /* Adjust the spacing between images */
+}
+
+.image-item {
+    background-color: aliceblue;
+    border: #454444;
+  /* Add your desired styling here, e.g., background color, border, etc. */
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.logo-container {
+  flex: 1;
+  text-align: left;
+}
+
+.logo-container img {
+  max-width: 200px;
+  margin-bottom: 10px;
+}
+
+.logo-container h1 {
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+
+.logo-container p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contact-info-container {
+  flex: 1;
+  text-align: center;
+}
+
+.contact-info-container h3 {
+  margin-bottom: 15px;
+}
+
+.contact-info-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info-container li {
+  margin-bottom: 10px;
+}
+
+.contact-info-container a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.office-address-container {
+  flex: 1;
+  text-align: right;
+}
+
+.office-address-container h3 {
+  margin-bottom: 15px;
+}
+
+.office-address-container p {
+  margin: 0;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img src="Capture1.PNG" alt="Intercraft Logo">
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Jobs</a></li>
+          </ul>
+        </nav>
+        <br>
+        <button id="contact-button">Contact Us</button>
+      </header>
+
+    <main>
+        <a name="page-anchor"></a>
+        <div class="hero-image">
+            <img src="pexels-pixabay-416320.jpg" alt="Hero Image">
+            <div class="hero-text">
+                <h1>Simple, Innovative, Unified</h1>
+            </div>
+        </div>
+
+        <div class="container" id="one-container">
+            <div class="text-container">
+                <h1 style="color: #ff0000;">Alfaisal University</h1>
+                <h2>Riyadh, KSA</h2>
+                <p>The management of Alfaisal University took an initiative
+                     to develop its first official Mobile e-Learning solution.
+                      This application bridges the faculty with students and provides 
+                      them with the best of functionality available.</p>
+            </div>
+            <div class="image-container">
+                <img src="aLFAISAL.PNG" alt="Alfaisal University e-Learning Portal">
+            </div>
+        </div>
+        <button class="arrow-button left-arrow" >&lt;</button>
+        <a href="page2.html"><button class="arrow-button right-arrow">&gt;</button></a>
+
+        <script src="scripts.js"></script>
+
+        <div class="container">
+            <img src="e-learning copy.jpg" alt="Training and Support" class="background-image">
+            <div class="content">
+                <h2>Training and Support</h2>
+                <p>Apart from technical solutions, Intercraft offers product trainings and support services to make sure the effective use of our solutions and enhance the productivity of your business staff. For educational institutes using Moodle (LMS), we have designed a multi level training program for faculty and site administrators.</p>
+            </div>
+        </div>
+
+                <button class="left-arrow">&#10096;</button>
+                <a href="mobile dev.html"><button class="right-arrow">&#10097;</button></a>
+
+                <div class="logo">
+                    <img src="logo.PNG" alt="Logo">
+                  </div>
+                  <div class="tagline" style="background-color: #8f8d8d;">
+                    <h2>Intercraft.Pvt.Ltd-proudly serving 
+                        businesses across the Globe</h2>
+                  </div>
+                  <div style="background-color: #b6b4b4;">
+                  <p>InterCraft is a System Integration and Application Development company. We give Quality solutions for managing, storing and exchanging organizational data in a systematic order. We use Open Source products for our services ever since we have established, with commendable achievements in field of Mobile Application Development and E-Learning Solutions</p>
+                </div>
+                <br>
+                <br>
+                <br>
+
+                <div class="image-gallery">
+                    <div class="image-item">
+                        <img src="laraaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.PNG" alt="Image 1" style="width: 200px; height: 150px; background-color: #585859;"></div>
+                    <div class="image-item">
+                        <img src="moddddddddle.PNG" alt="Image 2" style="width: 200px; height: 150px; background-color: #585859;">
+                      </div> 
+
+                      <div class="image-item">
+                        <img src="crm.png" alt="Image 3" style="width: 200px; height: 150px; background-color: #585859;">
+                      </div> 
+
+                      <div class="image-item">
+                        <img src="node-js-white.png" alt="Image 4" style="width: 200px; height: 150px; background-color: #585859;">
+                      </div> 
+
+                      <div class="image-item">
+                        <img src="oodo.png" alt="Image 5" style="width: 200px; height: 150px; background-color: #585859;">
+                      </div> 
+
+                      <div class="image-item">
+                        <img src="django.png" alt="Image 6" style="width: 200px; height: 150px; background-color: #585859;">
+                      </div> 
+
+                      <div class="image-item">
+                        <img src="fa.png" alt="Image 7" style="width: 200px; height: 150px; background-color: #585859;">
+                      </div> 
+
+                      <div class="image-item">
+                        <img src="vue.png" alt="Image 8" style="width: 200px; height: 150px; background-color:  #585859;">
+                      </div> 
+                    </div>
+
+    </main>
+    <br>
+    <br>
+    <br>
+
+    <footer>
+      <section class="contact-info">
+        <div class="logo-container">
+          <img src="intercraftt logo.PNG" style="height: 50px; width: 200px;" alt="Intercraft Logo">
+          
+          <p>Intercraft specializes in System Integration and Application Development,
+delivering efficient solutions for organizing, storing, and exchanging business
+data seamlessly. We ensure streamlined processes and top-tier quality in every project.</p>
+        </div>
+        <div class="contact-info-container">
+          <h3>Contact Info:</h3>
+          <ul>
+            <li><a href="tel:+92515328698">+92 51 5328698</a></li>
+            <li><a href="tel:+92555777107">+92 55 5777107</a></li>
+            <li><a href="mailto:info@intercraft.com.pk">info@intercraft.com.pk</a></li>
+          </ul>
+
+          <div class="image-buttons">
+            <a href="https://www.facebook.com/intercraft.pk"><img src="fb.PNG" alt="Facebook" style="height: 20px; width: 20px;"></a>
+            <a href="https://www.linkedin.com/company/intercraft-pakistan"><img src="linkedin.PNG" alt="LinkedIn" style="height: 20px; width: 20px;"></a>
+            <a href="https://www.youtube.com/intercraft.com"><img src="utube.PNG" alt="utube" style="height: 20px; width: 20px;"></a>
+          </div>
+        </div>
+        <div class="office-address-container">
+          <h3>Office Address:</h3>
+          <p>Office UG-8, 9<br>
+             Grand Xcito, D-Markaz,<br>
+             Gulberg Greens, Islamabad</p>
+        </div>
+      </section>  
+    </footer>
+
+</body>
+</html>

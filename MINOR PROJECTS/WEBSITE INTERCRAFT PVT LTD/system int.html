@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>system integration</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust height as needed */
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers the entire container */
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; /* Set text color to white for better readability */
+    padding: 20px; /* Add padding for spacing */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent overlay */
+    z-index: 1;
+}
+.navigation-arrows {
+    position: absolute;
+    bottom: auto; /* Adjust bottom padding as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="system int.avif" alt="Training and Support" class="background-image">
+        <div class="content">
+            <h2>system integration</h2>
+            <p>At Intercraft, we have integration experts to link your systems and achieve high data consistency. We make systems communicate with each other through intermediate webservices and reduce the administrative workload.</p>
+        </div>
+    </div>
+    <div class="navigation-arrows">
+        <a href="moodle.html"><button class="left-arrow">&#10096;</button></a>
+        <button class="right-arrow">&#10097;</button>
+    </div>
+</body>
+</html>

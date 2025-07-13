@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BYZ TECH Logo</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+      }
+      
+      .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      
+      .circle {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 2px solid #00ff00;
+        margin-right: 10px;
+      }
+      
+      .text {
+        color: #00ff00;
+        font-size: 36px;
+        font-weight: bold;
+      }
+      
+      .lines {
+        height: 2px;
+        width: 100%;
+        background-color: #00ff00;
+        margin-top: 10px;
+        position: relative;
+      }
+      
+      .lines::before,
+      .lines::after {
+        content: "";
+        position: absolute;
+        height: 10px;
+        width: 2px;
+        background-color: #00ff00;
+        top: -4px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+  </style>
+</head>
+<body>
+  <div class="logo-container">
+    <div class="circle"></div>
+    <div class="text">BYZ TECH</div>
+    <div class="lines"></div>
+  </div>
+</body>
+</html>
