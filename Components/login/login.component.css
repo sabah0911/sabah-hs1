@@ -1,0 +1,213 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background: linear-gradient(to bottom, #f8f8f8, #e0e0e0); /* A subtle gradient for the background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden; /* To contain the wavy background */
+}
+
+.wavy-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.wavy-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 170px; /* Adjust height as needed */
+    background-color: #ffffff; /* White wave */
+    border-radius: 0 0 50% 50%;
+}
+
+.wavy-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 170px; /* Adjust height as needed */
+    background: linear-gradient(90deg, #ab141c,#404f36); /* Purple to pink gradient */
+    border-radius: 50% 50% 0 0;
+}
+
+.signup-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px; /* Adjust width as needed */
+    height: 460px;
+}
+
+.logo {
+    color: #00c853; /* Example logo color */
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.signup-heading {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.google-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.google-icon {
+    margin-right: 10px;
+}
+
+.separator {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 0.9em;
+    margin-left: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+    margin-left: 5px;
+}
+
+.password-input-group {
+    position: relative;
+}
+
+
+
+.show-password {
+    position: absolute;
+    right: 20px;
+    top: 67%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #5cb85c; /* Example show button color */
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.register-button {
+    background-color: #33b758; /* Example register button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    width: 70%;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+.register-button {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .register-button :after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 50px;
+    transition: 1s;
+  }
+  
+  .register-button:hover  {
+    background-color: #28902a;
+    padding-right: 25px;
+  }
+  
+  .register-button:hover :after {
+    opacity: 2;
+    right: 0;
+  }
+
+
+
+.login-link {
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+.login-link a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+.top-right-link {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 0.9em;
+}
+
+.top-right-link a {
+    color:  #33b758;
+    text-decoration: none;
+    padding: 8px 15px;
+    border: 1px solid  #33b758;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.top-right-link a:hover {
+    background-color: #f0f8ff;
+}
+.forgot-password {
+    color: #337ab7;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,361 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  height: 50px;
+  margin-right: 1rem;
+}
+.logo span {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.btn-primary {
+  background-color: #5EC3FF;
+  color: #fff;
+  border: none;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  /* slightly darker */
+  background-color: #4ab0e6;
+
+  /* optional “lift” effect */
+  transform: translateY(-2px);
+}
+
+
+.hero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-right: 10rem;
+  gap: 2rem;
+  padding: 4rem 4rem 4rem 8rem;
+}
+.hero-text {
+  max-width: 40%;
+  margin-left: 5rem;
+}
+.hero-text h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+.hero-text p {
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  margin-top: 0.1rem;
+}
+.hero-image img {
+  width: 150%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+/* ==============================
+   Features Section
+   ============================== */
+.features {
+  padding: 3rem 2rem;
+  /* nudge it closer under hero if you want less space: */
+  margin-top: -1rem;
+  background: #fdfdfd;
+  text-align: center;
+}
+
+.features__title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.features__grid {
+  display: grid;
+  /* each card min 220px, expand to fill row */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background: #fff;
+  border: 1px solid #5EC3FF;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(94, 195, 255, 0.2);
+  transition: transform .2s, box-shadow .2s;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(94, 195, 255, 0.3);
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.feature-card p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #333;
+}
+/* ==============================
+   Mission & Vision Section
+   ============================== */
+.mission {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.mission h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.mission h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.mission-text,
+.vision-text {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #333;
+}
+/* ==============================
+   Appointment Scheduling Section
+   ============================== */
+
+.scheduling {
+  background: #fff;
+  padding: 4rem 4rem 4rem 8rem;
+}
+
+
+.scheduling__content {
+  display: flex;
+  align-items: center;        /* top‐align text & image */
+  justify-content: flex-start;/* pack toward left */
+  gap: 7rem;                  /* same gap as hero */
+}
+
+/* Text block */
+.scheduling__text {                  /* grow to fill available */
+  max-width: 40%;
+  margin-left: 8rem;
+  margin-top:2rem;
+  font-size: 1.05rem;
+  max-width: 80ch;           /* same width control */
+}
+
+/* Image block*/
+.scheduling__image {
+  flex: 0 0 auto;
+  margin-right: 7rem;
+  margin-top: 2rem;
+}
+.scheduling__image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+/* Doctor Scheduling Section */
+.scheduling--reverse {
+  background: #fff;
+  padding: 4rem 4rem 4rem 8rem;
+}
+
+.scheduling--reverse h2 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 0 0 1.5rem;
+  font-size: 1.65rem;
+}
+
+.scheduling--reverse .scheduling__content {
+  display: flex;
+  flex-direction: row;   /* puts image on the left, text on the right */
+  align-items: flex-start;
+  gap: 2rem;                     /* space between image and text */
+}
+
+.scheduling--reverse .scheduling__text {
+  max-width: 50%;
+  margin-left: 12rem;
+  margin-right: 12rem;
+  margin-top:2rem;
+  font-size: 1.05rem;
+  max-width: 80ch; 
+}
+
+.scheduling--reverse .scheduling__image {
+  flex: 0 0 auto;
+  margin-right: 2rem;            /* ensure some spacing from the text */
+}
+
+.scheduling--reverse .scheduling__image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+/* ==============================
+   AI Chatbot Facility Section
+   ============================== */
+.chatbot {
+  position: relative;
+  background: url('/Images/image.png') center/cover no-repeat;
+  min-height: 400px;
+}
+.chatbot__overlay {
+  content: '';
+  position: absolute;
+  inset: 0;
+  /* light white wash so your black text pops */
+  background-color:rgba(240,240,240,0.5);
+}
+.chatbot__content {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.chatbot__content h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.chatbot__content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #000;
+}
+/* == Stay Connected + Footer == */
+.stay-connected-footer {
+  background-color: #b3e5fc;
+  padding: 3rem 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  
+}
+
+.stay-connected-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+  gap: 2rem;
+}
+
+.stay-connected-left h2 {
+  font-size: 2rem;
+  margin: 0 0 1rem;
+}
+
+.newsletter-form {
+  display: flex;
+  border: 2px solid #ff003c;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.newsletter-form input {
+  flex: 1;
+  border: none;
+  padding: 0.75rem 1rem;
+}
+
+.newsletter-form button {
+  background-color: #ff003c;
+  color: white;
+  border: none;
+  padding: 0 1.5rem;
+  cursor: pointer;
+}
+
+.stay-connected-right .footer-logo-img {
+  width: 300px;
+  height:200px;
+}
+
+/* Feature row */
+.footer-features {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+  gap: 1.5rem;
+}
+
+.footer-features .feature {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.feature-title {
+  margin: 0;
+  font-weight: 600;
+}
+
+.feature-sub {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #333;
+}
+
+.feature i {
+  font-size: 1.5rem; /* or set your SVG size */
+}
+
+/* Bottom nav */
+.footer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  padding-top: 1rem;
+  gap: 1rem;
+}
+
+.footer-nav .links,
+.footer-nav .footer-links-right {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.9rem;
+}
+

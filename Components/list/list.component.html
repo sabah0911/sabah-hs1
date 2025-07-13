@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doctor List</title>
+</head>
+<body>
+
+<div class="doctor-list-container">
+  <div class="filter-sidebar">
+    <img src="assets/logo.jpg" alt="MedNexusAI Logo" class="logo" />
+
+    <h3>Filter</h3>
+
+    <!-- Gender Filter -->
+    <div class="filter-group">
+      <label>Gender</label>
+      <div>
+        <input type="radio" id="all" name="gender" checked />
+        <label for="all">All</label>
+        <input type="radio" id="female" name="gender" />
+        <label for="female">Female Doctor</label>
+        <input type="radio" id="male" name="gender" />
+        <label for="male">Male Doctor</label>
+      </div>
+    </div>
+
+    <!-- Experience Filter -->
+    <div class="filter-group">
+      <label for="experience">Experienced</label>
+      <select id="experience">
+        <option>All</option>
+        <option>5+ Years</option>
+        <option>10+ Years</option>
+      </select>
+    </div>
+
+    <!-- Fees Filter -->
+    <div class="filter-group">
+      <label for="feeRange">Visiting Fees</label>
+      <input type="range" id="feeRange" min="50" max="200" value="100" />
+      <div class="range-labels">
+        <span>$50</span>
+        <span>$200</span>
+      </div>
+    </div>
+
+    <!-- Availability -->
+    <div class="filter-group">
+      <label for="availability">Availability</label>
+      <select id="availability">
+        <option>Morning</option>
+        <option>Afternoon</option>
+        <option>Evening</option>
+      </select>
+    </div>
+
+    <!-- Consult Type -->
+    <div class="filter-group">
+      <label>Consult Type</label>
+      <div>
+        <input type="radio" id="televisit" name="consult" />
+        <label for="televisit">Televisit</label>
+        <input type="radio" id="onsite" name="consult" />
+        <label for="onsite">On-Site</label>
+        <input type="radio" id="homevisit" name="consult" />
+        <label for="homevisit">Home Visit</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="doctor-results">
+    <h2>56 Doctors Available</h2>
+
+    <!-- Doctor Card -->
+    <div class="doctor-card">
+  <img src="assets/doc1.jpg" alt="Dr. Peter Joe" class="doc-img" />
+
+  <div class="doc-main">
+    <div class="doc-info-box">
+      <div class="doc-left">
+        <h3>Dr. Peter Joe</h3>
+        <p>BDS, MDS</p>
+        <p>$58 Consultation fee at clinic</p>
+      </div>
+      <div class="doc-right">
+        <strong>Specialities:</strong>
+        <p>Orthodontist & Dentofacial orthopedist</p>
+      </div>
+    </div>
+
+    <div class="doc-actions">
+      <div class="doc-rating">
+        ⭐ <span>4.7/5</span>
+      </div>
+      <div class="doc-phone">
+        📞 +1(656)7381100
+      </div>
+      <button class="btn-book">Book Appointment</button>
+    </div>
+  </div>
+</div>
+
+<div class="doctor-card">
+  <img src="assets/doc2.jpg" alt="Dr. Elena Johnson" class="doc-img" />
+
+  <div class="doc-main">
+    <div class="doc-info-box">
+      <div class="doc-left">
+        <h3>Dr. Elena Johnson</h3>
+        <p>BDS, MDS</p>
+        <p>$70 Consultation fee at clinic</p>
+      </div>
+      <div class="doc-right">
+        <strong>Specialities:</strong>
+        <p>Orthodontist & Dentofacial orthopedist</p>
+      </div>
+    </div>
+
+    <div class="doc-actions">
+      <div class="doc-rating">
+        ⭐ <span>4.7/5</span>
+      </div>
+      <div class="doc-phone">
+        📞 +1(671)3425432
+      </div>
+      <button class="btn-book">Book Appointment</button>
+    </div>
+  </div>
+</div>
+
+  <div class="doctor-card">
+  <img src="assets/doc3.jpg" alt="Dr. Jeremy Thomson" class="doc-img" />
+
+  <div class="doc-main">
+    <div class="doc-info-box">
+      <div class="doc-left">
+        <h3>Dr. Jeremy Thomson</h3>
+        <p>BDS, MDS</p>
+        <p>$60 Consultation fee at clinic</p>
+      </div>
+      <div class="doc-right">
+        <strong>Specialities:</strong>
+        <p>Orthodontist & Dentofacial orthopedist</p>
+      </div>
+    </div>
+
+    <div class="doc-actions">
+      <div class="doc-rating">
+        ⭐ <span>4.7/5</span>
+      </div>
+      <div class="doc-phone">
+        📞 +1(656)8746893
+      </div>
+      <button class="btn-book">Book Appointment</button>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>

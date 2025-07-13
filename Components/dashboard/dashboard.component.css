@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+.dashboard-container {
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background: #c29dff;
+  color: #fff;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+}
+.sidebar-logo img {
+  max-width: 100%;
+  margin-bottom: 2rem;
+}
+.sidebar-nav a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+  text-transform: capitalize;
+}
+.sidebar-nav a:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* Main */
+.main-content {
+  flex: 1;
+  padding: 2rem;
+}
+.page-title {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+/* Stat Cards */
+.stats-cards {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.stat-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  flex: 1;
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.stat-label {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+.stat-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #6a1b9a;
+  margin-bottom: 0.5rem;
+}
+.stat-sub {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.875rem;
+  color: #555;
+}
+.percent-up {
+  color: green;
+  font-size: 0.85rem;
+}
+.stat-small {
+  font-size: 0.8rem;
+  color: #777;
+  margin-top: 0.75rem;
+}
+
+/* Record & Profile Layout */
+.records-profile {
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Table */
+.records-table {
+  flex: 2;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.records-table h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+.records-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+.records-table th,
+.records-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+}
+.records-table th {
+  background: #fafafa;
+  font-weight: 600;
+}
+
+/* Profile Card */
+.profile-card {
+  flex: 1;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.profile-card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 1rem;
+}
+.profile-card h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.btn-primary {
+  display: block;
+  width: 100%;
+  background: #b44dff;
+  color: #fff;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+.btn-primary:hover {
+  background: #a03dde;
+}
+.profile-details {
+  list-style: none;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+.profile-details li {
+  margin-bottom: 0.75rem;
+}
+.profile-details strong {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}

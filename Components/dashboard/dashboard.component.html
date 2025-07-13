@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MedNexusAI Dashboard</title>
+</head>
+<body>
+
+<div class="dashboard-container">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <img src="dasboard.png" alt="MedNexusAI Logo" />
+    </div>
+    <nav class="sidebar-nav">
+      <a href="#">Home</a>
+      <a href="#">Book An Appointment</a>
+      <a href="#">Doctors' Schedules</a>
+      <a href="#">AI Chat</a>
+      <a href="#">Electronic Health Records (EHR)</a>
+      <a href="#">Appointment Updates</a>
+      <a href="#">Medical Report Viewer</a>
+      <a href="#">Payment Status</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <h1 class="page-title">Dashboard</h1>
+
+    <!-- Stats Cards -->
+    <div class="stats-cards">
+      <div class="stat-card">
+        <div class="stat-label">Total Admitted Patients</div>
+        <div class="stat-value">859</div>
+        <div class="stat-sub">
+          <span>529 Male</span>
+          <span>330 Female</span>
+        </div>
+        <div class="stat-small">
+          <strong>Patient Status:</strong><br>
+          89 Waiting &nbsp;&nbsp; 109 Discharge &nbsp;&nbsp; 16 Transfer
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-label">Total Active Staff</div>
+        <div class="stat-value">83</div>
+        <div class="stat-sub">
+          <span>🩺 38 Doctors</span>
+          <span>🩹 45 Nursing</span>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-label">Operational Cost</div>
+        <div class="stat-value">$75,256 <span class="percent-up">+5%</span></div>
+        <div class="stat-small">Avg. cost per patient 2k</div>
+      </div>
+    </div>
+
+    <!-- Records Table + Profile -->
+    <section class="records-profile">
+      <div class="records-table">
+        <h2>Patient Records</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Patient Name</th>
+              <th>Patient ID</th>
+              <th>Ward Room No.</th>
+              <th>Assigned Dr.</th>
+              <th>Assigned Nurse</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Sample dummy rows -->
+            <tr><td>Eaward Parker, 32, Y, M</td><td>25698</td><td>ICU-11</td><td>Dr. ChrisGeller</td><td>Kip Andrews</td></tr>
+            <tr><td>Eaward Parker, 32, Y, M</td><td>25698</td><td>Ge-Ward</td><td>Dr. ChrisGeller</td><td>Kip Andrews</td></tr>
+            <tr><td>Eaward Parker, 32, Y, M</td><td>25698</td><td>Private-A</td><td>Dr. ChrisGeller</td><td>Kip Andrews</td></tr>
+            <tr><td>Eaward Parker, 32, Y, M</td><td>25698</td><td>Covid-19</td><td>Dr. ChrisGeller</td><td>Kip Andrews</td></tr>
+            <tr><td>Eaward Parker, 32, Y, M</td><td>25698</td><td>ICU-10</td><td>Dr. ChrisGeller</td><td>Kip Andrews</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <aside class="profile-card">
+        <h2>Patient Profile</h2>
+        <img src="profile.png" alt="Patient Portrait" class="profile-img"/>
+        <h3>Eaward Parker</h3>
+        <button class="btn-primary">View Medical Records</button>
+        <ul class="profile-details">
+          <li><strong>Registration Date</strong> December 17, 2019</li>
+          <li><strong>Registration Number</strong> 21738914682468347</li>
+          <li><strong>No. RM</strong> 089213</li>
+          <li><strong>Domicile Address</strong> Surabaya, East Java</li>
+          <li><strong>Patient Telephone No.</strong> 0989747433234</li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+</div>
+
+</body>
+</html>

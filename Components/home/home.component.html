@@ -1,0 +1,194 @@
+<nav class="navbar">
+  <div class="logo">
+  <img src="/Images/logo.jpg" alt="MedNexusAI">
+
+  </div>
+  <button routerLink="/register" class="btn-primary">Book Now</button>
+</nav>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>MedNexusAI</h1>
+    <p>
+      Welcome to MedNexusAI, a leading healthcare provider dedicated to delivering
+      exceptional patient care and innovative medical solutions. Our website
+      provides comprehensive information on our services, medical specialties,
+      and patient resources.
+    </p>
+    <button routerLink="/register" class="btn-primary">Book Appointment</button>
+  </div>
+  <div class="hero-image">
+    <img src="/Images/image1.png" alt="Doctor">
+  </div>
+</section>
+
+<!-- src/app/Components/home/home.component.html -->
+<section class="features">
+  <h2 class="features__title">
+    Why Choose MedNexusAI for your Healthcare?
+  </h2>
+
+  <div class="features__grid">
+    <div class="feature-card">
+      <h3>Online Reservation</h3>
+      <p>
+        Our online reservation system allows you to schedule
+        appointments at your convenience.
+      </p>
+    </div>
+
+    <div class="feature-card">
+      <h3>All Specialist</h3>
+      <p>
+        Our hospital is proud to have a team of experienced
+        and skilled doctor specialists who provide high-quality
+        care to our patients.
+      </p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Medical Record</h3>
+      <p>
+        Access your medical records securely and
+        conveniently through our online portal. Our
+        records are accurate, up-to-date, and confidential.
+      </p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Customer Support</h3>
+      <p>
+        Our dedicated customer service team is here to assist
+        you with any questions or concerns. We’re committed
+        to providing exceptional support and care.
+      </p>
+    </div>
+  </div>
+</section>
+<!-- …after the features section-->
+<section class="mission">
+  <h2>Our Mission</h2>
+  <p class="mission-text">
+    To deliver exceptional healthcare services with a commitment to excellence,
+    innovation, and compassion. We strive to improve the health of those we
+    serve through a patient-first approach, advanced medical technology,
+    and a team of skilled professionals.
+  </p>
+
+  <h3>Our Vision</h3>
+  <p class="vision-text">
+    To be the healthcare provider of choice, recognized for our dedication to
+    quality, safety, and patient satisfaction. We aim to set the standard for
+    healthcare excellence in our region.
+  </p>
+</section>
+<!-- Appointment Scheduling Section -->
+<section class="scheduling">
+  <h2>Appointment Scheduling</h2>
+  <div class="scheduling__content">
+    <div class="scheduling__text">
+      <p>
+        At MedNexusAI, we understand the importance of timely and
+        convenient access to healthcare services. Our Online Appointment
+        Scheduling system is designed to provide you with a seamless
+        and efficient way to book, manage, and attend your medical
+        appointments.
+      </p>
+    </div>
+    <div class="scheduling__image">
+      <img src="/Images/image2.png" alt="Appointment scheduling interface">
+    </div>
+  </div>
+</section>
+<section class="scheduling scheduling--reverse">
+  <h2>Doctor Scheduling</h2>
+  <div class="scheduling__content">
+    <div class="scheduling__image">
+      <img src="/Images/image3.png" alt="Doctor dashboard">
+    </div>
+    <div class="scheduling__text">
+      <p>
+        Our Doctor Dashboard is designed to empower healthcare professionals with a user-friendly interface that simplifies appointment management and enhances patient care. Efficiently update your schedule to reflect current availability, ensuring accurate booking and reducing scheduling conflicts. Access a daily, weekly, or monthly view of your appointments, complete with patient details, visit types, and notes.
+      </p>
+    </div>
+  </div>
+</section>
+<section class="chatbot">
+  <div class="chatbot__overlay"></div>
+  <div class="chatbot__content">
+    <h2>Facility of AI Chatbot</h2>
+    <p>
+      At MedNexusAI, we’re committed to enhancing your healthcare experience
+      through innovation. Our AI Chatbot serves as your virtual assistant,
+      providing instant support and information whenever you need it.
+      Our AI Chatbot is designed to streamline your healthcare journey,
+      making it more convenient and accessible. Whether you’re seeking
+      information or need assistance with services, our chatbot is here to help.
+    </p>
+  </div>
+</section>
+<!-- …your chatbot section ends here… -->
+
+<!-- Stay Connected + Footer Section -->
+<section class="stay-connected-footer">
+  <div class="stay-connected-content">
+    <div class="stay-connected-left">
+      <h2>Stay Connected</h2>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Email Address" />
+        <button type="button">Join</button>
+      </form>
+    </div>
+    <div class="stay-connected-right">
+      <img src="/Images/logo_blue_bg.png" alt="MedNexusAI Logo" class="footer-logo-img"/>
+    </div>
+  </div>
+
+  <div class="footer-features">
+    <div class="feature">
+      <i class="icon-pmc"></i>
+      <div>
+        <p class="feature-title">PMC Verified Doctors</p>
+        <p class="feature-sub">Authentic and updated information</p>
+      </div>
+    </div>
+    <div class="feature">
+      <i class="icon-money"></i>
+      <div>
+        <p class="feature-title">Money Back Guaranteed</p>
+        <p class="feature-sub">We return money within 48 hours</p>
+      </div>
+    </div>
+    <div class="feature">
+      <i class="icon-support"></i>
+      <div>
+        <p class="feature-title">15/7 Customer Support</p>
+        <p class="feature-sub">Well Trained and Supportive Team</p>
+      </div>
+    </div>
+    <div class="feature">
+      <i class="icon-lock"></i>
+      <div>
+        <p class="feature-title">Secure Online Payment</p>
+        <p class="feature-sub">We possess SSL/Secure Certificate</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-nav">
+    <div class="links">
+      <a href="#">Terms And Policies</a>
+      <a href="#">About us</a>
+      <a href="#">Doctors</a>
+      <a href="#">All Cities</a>
+      <a href="#">All Doctors</a>
+    </div>
+    <div class="footer-links-right">
+      <a routerLink="/home">Home</a>
+      <a routerLink="/about">About Us</a>
+      <a routerLink="/services">Services</a>
+      <a routerLink="/pages">Pages</a>
+      <a routerLink="/contact">Contact Us</a>
+    </div>
+  </div>
+</section>
